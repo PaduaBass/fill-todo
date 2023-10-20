@@ -13,4 +13,5 @@ export const OptionsArea = styled.View`
   width: 50px;
   justify-content: flex-end;
   align-items: center;
+  gap: 20px;
 `;

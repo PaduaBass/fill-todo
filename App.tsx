@@ -4,6 +4,7 @@ import { ThemeProvider } from 'styled-components';
 import RootRoutes from './src/routes/Routes';
 import { useFonts, Montserrat_300Light, Montserrat_500Medium, Montserrat_700Bold, } from '@expo-google-fonts/montserrat'
 import useThemeStore, { Theme } from './src/store/themeStore';
+import './src/locales/i18n';
 
 export default function App() {
   const { themeMode, theme } = useThemeStore();

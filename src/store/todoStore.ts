@@ -8,12 +8,24 @@ export type TodoType = {
 
 type State = {
   todos: TodoType[];
+  showDone: boolean;
+  showGrid: boolean;
+  changeShowGrid: () => void;
+  changeShowDone: () => void;
   addTodo: (todo: TodoType) => void;
   changeStatus: (todo: TodoType) => void;
 }
 
 const useTodoStore = create<State>((set) => ({
   todos: [],
+  showDone: false,
+  showGrid: false,
+  changeShowGrid: () => {
+    set(state => ({ showGrid: !state.showGrid }));
+  },
+  changeShowDone: () => {
+    set(state => ({ showDone: !state.showDone }))
+  },
   addTodo: (todo: TodoType) => {
     set(state => ({ todos: [todo, ...state.todos] }))
   },

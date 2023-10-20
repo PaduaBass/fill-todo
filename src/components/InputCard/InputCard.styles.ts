@@ -14,6 +14,7 @@ export const InputComponent = styled.TextInput.attrs(() => ({
     padding: 10px;
     border-radius: ${theme.borderRadius.small};
     color: ${theme.colors.gray};
+    height: 40px;
     border: ${isError ? '1px solid ' + theme.colors.danger : '0px'}
   `}
 `;

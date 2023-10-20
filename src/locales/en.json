@@ -1,0 +1,17 @@
+{
+  "translation": {
+    "titleButtonNew": "New",
+    "titleButtonSave": "Save",
+    "titleButtonCancel": "Cancel",
+    "labelSwitchButton": "Show done",
+    "minutePassed": "minute ago",
+    "hourPassed": "hour ago",
+    "dayPassed": "day ago",
+    "minutesPassed": "minutes ago",
+    "hoursPassed": "hours ago",
+    "daysPassed": "days ago",
+    "yesterday": "yesterday",
+    "viewBy": "View by",
+    "placeholderInput": "pay credit card bill..."
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "translation": {
+    "titleButtonNew": "Novo",
+    "titleButtonSave": "Salvar",
+    "titleButtonCancel": "Cancelar",
+    "labelSwitchButton": "Ver concluídos",
+    "minutePassed": "minuto atrás",
+    "hourPassed": "hora atrás",
+    "dayPassed": "Dia atrás",
+    "minutesPassed": "minutos atrás",
+    "hoursPassed": "horas atrás",
+    "daysPassed": "Dias atrás",
+    "yesterday": "ontem",
+    "viewBy": "Visualizar por",
+    "placeholderInput": "Pagar fatura do cartão de crédito..."
+  }
+}
