@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components/native';
 
 type ColorProps = {
-  color: string;
+  color?: string;
 }
 
 
@@ -12,7 +12,7 @@ export const ButtonComponent = styled.TouchableOpacity<ColorProps>`
   justify-content: center;
   align-items: center;
   ${({ theme, color }) => css`
-    background: ${color};
+    background: ${color ? color : theme.colors.white};
     border-radius: ${theme.borderRadius.small};
   `};
 `;

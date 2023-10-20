@@ -15,7 +15,7 @@ type State = {
 const useTodoStore = create<State>((set) => ({
   todos: [],
   addTodo: (todo: TodoType) => {
-    set(state => ({ todos: [...state.todos, todo] }))
+    set(state => ({ todos: [todo, ...state.todos] }))
   },
   changeStatus: (todo: TodoType) => {
     set(state => {

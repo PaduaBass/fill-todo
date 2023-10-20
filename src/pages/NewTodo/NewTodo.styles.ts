@@ -13,11 +13,6 @@ export const Container = styled(SafeAreaView)`
   padding: 0 20px;
 `;
 
-export const Header = styled.View`
-  align-items: center;
-  height: 30px;
-`;
-
 export const Content = styled.View<ContentProps>`
   padding: 20px 0px;
 `;

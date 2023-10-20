@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components/native';
-import theme from '../../theme/global';
+import theme from '../../theme/light';
 import { FieldError } from 'react-hook-form';
 
 type InputComponentProps = {

@@ -1,4 +1,4 @@
-import { Image, Text } from "react-native";
+import { Image, Text, View } from "react-native";
 import * as S from './Home.styles';
 import Logo from '../../../assets/logo.png';
 import { useSafeAreaInsets } from "react-native-safe-area-context";
@@ -12,6 +12,8 @@ import Card from "../../components/Card/Card";
 import { Feather } from "@expo/vector-icons";
 import { useState } from "react";
 import { TouchableOpacity } from "react-native-gesture-handler";
+import useThemeStore from "../../store/themeStore";
+import Header from "../../components/Header/Header";
 
 
 
@@ -21,6 +23,8 @@ const Home = () => {
   const store = useTodoStore();
   const [showGrid, setShowGrid] = useState(false);
   const [showDone, setShowDone] = useState(false);
+  const { toggleTheme, themeMode } = useThemeStore();
+
 
   const handleNavigateNewTodo = () => {
     navigation.navigate("newTodo");
@@ -32,14 +36,12 @@ const Home = () => {
     setShowGrid(state => !state);
   }
   return <S.Container>
-    <S.Header>
-      <Image source={Logo} />
-    </S.Header>
+    <Header />
     <S.Content insets={insets}>
       <S.HeaderList>
         <S.VisualizationLabel>Visualizar por </S.VisualizationLabel>
         <TouchableOpacity onPress={handleChangeGrid}>
-           <Feather name={showGrid ? 'grid' : 'list'} size={20}/>
+           <Feather color={themeMode.colors.blueDark} name={showGrid ? 'grid' : 'list'} size={20}/>
         </TouchableOpacity>
       </S.HeaderList>
       <S.List key={showGrid ? '_' : '#'} numColumns={showGrid ? 2 : 0} horizontal={false} showsVerticalScrollIndicator={false} data={showDone ? store.todos : todosFilter} keyExtractor={(_, i) => String(i)} renderItem={({ item }) => (

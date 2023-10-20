@@ -1,5 +1,5 @@
 import * as S from './Switch.styles';
-import theme from '../../theme/global'
+import theme from '../../theme/light'
 import { SwitchProps } from 'react-native';
 interface SwitchComponentProps extends SwitchProps {
   label?: string;

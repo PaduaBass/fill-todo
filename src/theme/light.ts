@@ -1,5 +1,5 @@
 import { Dimensions } from "react-native";
-export default {
+const theme = {
   colors: {
     white: "#FFF",
     whiteHighlight: "#F3FAFF",
@@ -28,5 +28,7 @@ export default {
     height: Dimensions.get('window').height,
   },
 };
+
+export default theme;
 
 

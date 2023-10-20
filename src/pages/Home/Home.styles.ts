@@ -13,11 +13,6 @@ export const Container = styled(SafeAreaView)`
   padding: 0 20px;
 `;
 
-export const Header = styled.View`
-  align-items: center;
-  height: 30px;
-`;
-
 export const List = styled.FlatList.attrs(({ numColumns }) => ({
   columnWrapperStyle: numColumns !== undefined && numColumns > 0 && { justifyContent: 'space-between' },
 }))`
@@ -40,6 +35,7 @@ export const HeaderList = styled.View`
 export const VisualizationLabel = styled.Text`
   ${({ theme }) => css`
     font-family: ${theme.fontWeight.medium};
+    color: ${theme.colors.blueDark};
   `}
 `;
 

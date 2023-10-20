@@ -6,6 +6,10 @@ type CardComponentProps = {
   isDone: boolean
 }
 
+type TimeDescriptionProps = {
+  passedTimeLimit: boolean;
+}
+
 export const Container = styled.TouchableOpacity<CardComponentProps>`
   ${({ theme, showGrid, isDone }) => css`
     background: ${isDone ? theme.colors.blueLight : theme.colors.white};
@@ -24,9 +28,9 @@ export const DescriptionText = styled.Text`
   `}
 `;
 
-export const TimeDescription = styled.Text`
- ${({ theme }) => css`
-    color: ${theme.colors.blueDark};
+export const TimeDescription = styled.Text<TimeDescriptionProps>`
+ ${({ theme, passedTimeLimit }) => css`
+    color: ${passedTimeLimit ? theme.colors.danger : theme.colors.blueDark};
     font-family: ${theme.fontWeight.light};
     font-size: ${theme.fontSizes.small};
   `}

@@ -15,5 +15,6 @@ export const Label = styled.Text`
     font-family: ${theme.fontWeight.bold};
     font-size: ${theme.fontSizes.small};
     padding-left: 5px;
+    color: ${theme.colors.blueDark}
   `};
 `;
