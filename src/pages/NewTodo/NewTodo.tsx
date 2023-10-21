@@ -50,7 +50,7 @@ const NewTodo = () => {
   return <S.Container>
     <Header />
     <S.InputArea>
-      <InputCard autoFocus returnKeyType='done' onSubmitEditing={handleSubmit(handleAddTodo)} isError={errors.description} onChangeText={t => setValue('description', t)} placeholder={t('placeholderInput')} {...register('description')} />
+      <InputCard autoFocus returnKeyType='done' onSubmitEditing={handleSubmit(handleAddTodo)} isError={errors.description} onChangeText={t => setValue('description', t)} placeholder={t('placeholderInput')} />
       <S.ButtonsArea>
         <Switch label={t('labelSwitchButton')} value={showDone} onValueChange={changeShowDone} />
         <S.ButtonsRow>

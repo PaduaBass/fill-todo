@@ -7,7 +7,6 @@ interface InputCardProps extends TextInputProps {
 }
 
 const InputCard = ({ isError = undefined, ...props}: InputCardProps) => {
-  
   return <>
     <S.InputComponent isError={isError} {...props} />
     {isError && isError.message && <S.LabelError>{isError.message}</S.LabelError>}

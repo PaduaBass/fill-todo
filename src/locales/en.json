@@ -4,6 +4,8 @@
     "titleButtonSave": "Save",
     "titleButtonCancel": "Cancel",
     "labelSwitchButton": "Show done",
+    "secondsPassed": "seconds ago",
+    "secondPassed": "second ago",
     "minutePassed": "minute ago",
     "hourPassed": "hour ago",
     "dayPassed": "day ago",
