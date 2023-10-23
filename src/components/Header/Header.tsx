@@ -11,9 +11,11 @@ const Header = () => {
   return (
     <S.Container>
       <S.OptionsArea />
-        <Image source={Logo} />
+      <Image source={Logo} />
       <S.OptionsArea>
-        <TouchableOpacity onPress={() => i18n.changeLanguage(i18n.language === 'pt' ? 'en' : 'pt')}>
+        <TouchableOpacity
+          onPress={async () => await i18n.changeLanguage(i18n.language === 'pt' ? 'en' : 'pt')}
+        >
           <FontAwesome name="language" size={25} color={themeMode.colors.blueDark} />
         </TouchableOpacity>
         <TouchableOpacity onPress={toggleTheme}>
@@ -21,7 +23,7 @@ const Header = () => {
         </TouchableOpacity>
       </S.OptionsArea>
     </S.Container>
-  )
+  );
 };
 
 export default Header;

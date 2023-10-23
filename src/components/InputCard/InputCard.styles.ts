@@ -1,8 +1,8 @@
 import styled, { css } from 'styled-components/native';
 import theme from '../../theme/light';
-import { FieldError } from 'react-hook-form';
+import { type FieldError } from 'react-hook-form';
 
-type InputComponentProps = {
+interface InputComponentProps {
   isError: FieldError | undefined;
 }
 
@@ -19,11 +19,3 @@ export const InputComponent = styled.TextInput.attrs(() => ({
   `}
 `;
 
-export const LabelError = styled.Text`
-  ${({ theme }) => css`
-    font-family: ${theme.fontWeight.light};
-    color: ${theme.colors.danger};
-    font-size: ${theme.fontSizes.small};
-    margin-top: 2px;
-  `};
-`;

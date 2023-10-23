@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components/native';
 
-type ColorProps = {
+interface ColorProps {
   color?: string;
 }
 
@@ -12,16 +12,12 @@ export const ButtonComponent = styled.TouchableOpacity<ColorProps>`
   justify-content: center;
   align-items: center;
   ${({ theme, color }) => css`
-    background: ${color ? color : theme.colors.white};
+    background: ${color ?? theme.colors.white};
     border-radius: ${theme.borderRadius.small};
   `};
 `;
 
-export const TitleButton = styled.Text<ColorProps>`
-  ${({ theme, color }) => css`
-    font-family: ${theme.fontWeight.bold};
-    color: ${color};
+export const TitleButtonArea = styled.Text<ColorProps>`
     padding-left: 2px;
-  `};
 `;
 

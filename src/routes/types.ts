@@ -1,9 +1,10 @@
+import { type ParamListBase } from '@react-navigation/native';
 import type { StackScreenProps } from '@react-navigation/stack';
 
-export type RootStackParamList = {
+export interface RootStackParamList extends ParamListBase {
   home: undefined;
   newTodo: undefined;
-};
+}
 
 type Props = StackScreenProps<RootStackParamList, 'home'>;
 

@@ -1,12 +1,11 @@
-import styled from 'styled-components/native';
-import { css } from 'styled-components/native';
+import styled, { css } from 'styled-components/native';
 
-type CardComponentProps = {
+interface CardComponentProps {
   showGrid: boolean;
   isDone: boolean
 }
 
-type TimeDescriptionProps = {
+interface TimeDescriptionProps {
   passedTimeLimit: boolean;
 }
 

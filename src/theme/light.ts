@@ -15,10 +15,15 @@ const theme = {
     normal: "16px",
     large: "20px",
   },
+  fontFamily: {
+    Montserrat300: "Montserrat_300Light",
+    Montserrat500: "Montserrat_500Medium",
+    Montserrat700: "Montserrat_700Bold",
+  },
   fontWeight: {
-    light: "Montserrat_300Light",
-    medium: "Montserrat_500Medium",
-    bold: "Montserrat_700Bold",
+    light: 300,
+    medium: 600,
+    bold: 700,
   },
   borderRadius: {
     small: "8px",

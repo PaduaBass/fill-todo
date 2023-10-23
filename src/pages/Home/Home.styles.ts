@@ -1,8 +1,8 @@
 
 import styled, { css } from 'styled-components/native';
-import { EdgeInsets, SafeAreaView } from 'react-native-safe-area-context';
+import { type EdgeInsets, SafeAreaView } from 'react-native-safe-area-context';
 
-type ContentProps = {
+interface ContentProps {
   insets: EdgeInsets;
 }
 
@@ -30,13 +30,6 @@ export const HeaderList = styled.View`
   justify-content: space-between;
   align-items: center;
   height: 40px;
-`;
-
-export const VisualizationLabel = styled.Text`
-  ${({ theme }) => css`
-    font-family: ${theme.fontWeight.medium};
-    color: ${theme.colors.blueDark};
-  `}
 `;
 
 export const Footer = styled.View`

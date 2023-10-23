@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components/native';
+import styled from 'styled-components/native';
 
 export const List = styled.FlatList.attrs(({ numColumns }) => ({
   columnWrapperStyle: numColumns !== undefined && numColumns > 0 && { justifyContent: 'space-between' },
@@ -13,9 +13,3 @@ export const HeaderList = styled.View`
   height: 40px;
 `;
 
-export const VisualizationLabel = styled.Text`
-  ${({ theme }) => css`
-    font-family: ${theme.fontWeight.medium};
-    color: ${theme.colors.blueDark};
-  `}
-`;

@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components/native';
+import styled from 'styled-components/native';
 
 
 export const SwitchArea = styled.View`
@@ -8,13 +8,4 @@ export const SwitchArea = styled.View`
 `;
 
 export const SwitchStyled = styled.Switch`
-`;
-
-export const Label = styled.Text`
-  ${({ theme }) => css`
-    font-family: ${theme.fontWeight.bold};
-    font-size: ${theme.fontSizes.small};
-    padding-left: 5px;
-    color: ${theme.colors.blueDark}
-  `};
 `;

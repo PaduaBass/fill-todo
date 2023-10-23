@@ -1,5 +1,5 @@
 import 'styled-components';
-import theme from './light';
+import type theme from './light';
 
 type ThemeType = typeof theme;
 
