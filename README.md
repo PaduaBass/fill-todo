@@ -3,6 +3,10 @@
 This project was developed using expo.
 To execute the project you need to run the command:
 
+`yarn`
+wait for the dependencies to be installed.
+
+right away run command
 `yarn android`
 or
 `yarn ios`
