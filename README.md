@@ -20,3 +20,9 @@ Main libraries used in the project:
 - @react-navigation/native
 - @react-navigation/stack
 - date-fns
+
+user interface
+
+<img src="./assets/print1.png">
+<img src="./assets/print2.png">
+<img src="./assets/print3.png">
